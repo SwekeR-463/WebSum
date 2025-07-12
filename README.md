@@ -32,7 +32,7 @@ graph TD
 - **Summary Aggregation**: Combines individual screenshot summaries into a final report.
 - **Error Handling**: Gracefully handles browser and LLM errors with informative logs.
 
-## Learning Section
+## Learnings
 ### LangGraph Basics
 LangGraph is a framework for building stateful, graph-based workflows with LLMs. 
 It allows defining nodes (tasks) and edges (transitions) to manage complex agent interactions.
@@ -42,7 +42,7 @@ In this project, LangGraph orchestrates the sequence of browser initialization, 
 Screenshots are captured as binary data and encoded as base64 strings to be compatible with LLM inputs (e.g.,Gemini), which accept text or image URLs. 
 Base64 encoding allows the screenshot to be embedded directly in the prompt as a `data:image/png;base64` URL, avoiding external file storage. 
 This ensures seamless integration with the LLM for summarization tasks.
-Also passing string to the LLMs leads to less token consumption than passing images as whole.
+Also passing strings to the LLMs leads to less token consumption than passing images as whole.
 
 ### Conditional Edge
 LangGraph’s conditional edges enable dynamic routing based on state or LLM decisions. 
