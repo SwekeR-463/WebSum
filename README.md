@@ -1,6 +1,5 @@
 # Web Browsing Agent with LangGraph
 
-## Description
 This project implements a web browsing agent using LangGraph to automate navigation, screenshot capture, and content summarization. 
 It leverages Playwright for browser automation and the Gemini for summarizing page content and making scroll decisions. 
 The agent processes a webpage, captures screenshots, generates summaries, and aggregates them into a final report based on a user-defined task.
